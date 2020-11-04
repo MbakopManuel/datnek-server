@@ -1,12 +1,12 @@
-import PostController from './../src/controllers/PostController';
+import LangueController from './../src/controllers/LangueController';
 
 export default (app) => {
 
   // POST ROUTES
-  app.get(`/api/post`, PostController.getAll);
-  app.get(`/api/post/:params`, PostController.get);
-  app.post(`/api/post`, PostController.insert)
-  app.put(`/api/post/:id`, PostController.update);
-  app.delete(`/api/post/:id`, PostController.delete);
+  app.get(`/api/langue`, LangueController.getAll);
+  app.get(`/api/langue/:params`, LangueController.get);
+  app.post(`/api/langue`, LangueController.insert)
+  app.put(`/api/langue/:id`, LangueController.update);
+  app.delete(`/api/langue/:id`, LangueController.delete);
 
 }

@@ -1,6 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 const server = express();
+var cors = require('cors')
+
+server.use(cors())
 
 server.use(bodyParser.json());
 
